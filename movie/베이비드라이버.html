@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .clear{
+            clear: both;
+        }
+        ul{
+            list-style-type: none;
+            display: inline-block;
+        }
+        body{
+            font-family: Arial;
+            background-color: #f1f1f1;
+        }
+        .header{
+            padding: 50px;
+            background: white;
+        }
+        .header h1{
+            font-size: 45px;
+            display: inline-block;
+        }
+        .header li{
+            display: inline-block;
+            vertical-align: bottom;
+        }
+        .moto{
+            font-size: 15px;
+            margin-left: 20px;
+        }
+        .search{
+            float: right;
+            margin-right: 50px;
+            margin-top: 30px;
+        }
+        .search input{
+            width: 300px;
+            height: 30px;
+        }
+        .search img{
+            width: 26px;
+            height: 26px;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+            text-align: center;
+        }
+        .topnav a{
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 17px 50px;
+            text-decoration: none;
+        }
+        .topnav a:hover{
+            background-color: #ddd;
+            color: black;
+        }
+        .topnav li{
+            display: inline-block;
+        }
+        .topnav ul{
+            text-align: center;
+        }
+        .main{
+            width: 100%;
+            padding: 0 200px;
+        }
+        footer{
+            margin-top: 40px;
+            padding: 20px 0 0 15px;
+            color: #666;
+            border-top: solid 1px #ccc;
+            font-size: 12px;
+        }
+        footer #address{
+            float: left;
+        }
+        footer #address ul {
+            display: block;
+        }
+        footer #link{
+            float: right;
+        }
+        footer #footer_menu li{
+            margin-top: 5px;
+        }
+        footer #company_info{
+            margin-top: 20px;
+        }
+        footer #company_info li{
+            margin-top: 2px;
+        }
+        footer #copyright{
+            margin-top: 10px;
+            font-size: 11px;
+            color: #888;
+        }
+        footer #link h3{
+            font-size: 16px;
+        }
+        footer #link select{
+            margin: 5px 0 0 50px;
+            width: 100px;
+            height: 18px;
+            font-size: 11px;
+        }
+        h1 a{
+            text-decoration: none;
+        }
+        h1 a:visited{
+            color: black;
+        }
+        .image{
+            float: left;
+            width: 376px;
+            height: 536px;
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+        .movie ul{
+            display: inline-block;
+            list-style-type: none;
+            padding-top: 50px;
+            padding-left: 30px;
+        }
+        .movie li{
+            padding: 20px 0;
+            font-size: 29px;
+        }
+        .movie h1{
+            font-size: 45px;
+        }
+        .movie span{
+            font-weight: bold;
+            padding-right: 20px;
+        }
+        .movie .watch{
+            background-color: #333;
+            color: white;
+            width: 180px;
+            height: 100px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            padding-top: 33px;
+        }
+        .story{
+            margin-top: 50px;
+            border-top: solid 1px #ccc;
+        }
+        .story h2{
+            font-size: 29px;
+            margin: 30px 0;
+        }
+        .story p{
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><h1><a href="../index.html">Dosney+</a></h1></li>
+            <li class="moto">언제 어디든 내 손안에 작은 영화관</li>
+        </ul>
+        <ul class="search">
+            <li><input type="text"></li>
+            <li><img src="../img/돋보기.png" alt=""></li>
+        </ul>
+    </div>
+    <div class="topnav">
+        <ul>
+            <li><a href="../project_new.html">최신 영화</a></li>
+            <li><a href="../hot_korea.html">인기 영화</a></li>
+            <li><a href="../project_genre.html">장르별 영화</a></li>
+            <li><a href="../project_my.html">마이 페이지</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <img class="image" src="../img/베이비드라이버.jpg" alt="">
+        <div class="movie">
+            <ul>
+                <li><h1>베이비 드라이버</h1></li>
+                <li><span>개봉년도</span>2017년</li>
+                <li><span>감독</span>에드거 라이트</li>
+                <li><span>장르</span>액션, 범죄, 코미디, 로맨스</li>
+                <li><span>상영시간</span>113분</li>
+                <div class="watch">보러가기</div>
+            </ul>
+        </div>
+        <div class="story">
+            <h2>줄거리</h2>
+            <p>애틀랜타의 은행과 공공기관들을 연쇄적으로 털고 있는 어느 강도단. 강도단의 리더인 '박사' 밑에서 전속 도주 드라이버로 일하고 있는 베이비는 어릴 적의 사고로 생긴 청각장애 때문에 생기는 이명을 없애기 위해 항상 아이팟과 이어폰을 가지고 다니며 음악에 심취해 있다.
+
+청각이 봉쇄된 핸디캡에도 불구하고 타의 추종을 불허하는 최고의 드라이버 베이비는 박사에게 진 빚을 모두 청산한 후 우연히 만난 운명의 상대인 데보라와 도시를 떠나기로 한다. 하지만 베이비의 재능을 계속 이용하고 싶은 박사의 협박으로 다시 범죄에 뛰어드는데...</p>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <footer>
+            <article id="address">
+                <ul id="footer_menu">
+                    <li>개인정보 취급방침 | 이용 안내 | 이메일 무단수집 거부</li>
+                    <li>최신 영화 | 인기 영화 | 영화 배우 | 영화 찾기 | 리뷰<li>
+                </ul>
+                <ul id="company_info">
+                    <li>도즈니 플러스(주)</li>
+                    <li>대표이사 : 김도현</li>
+                    <li>주소 : 서울시 강남구 가나다동 123번지</li>
+                    <li>전화: (02)123-1234, FAX : (02)134-4747</li>
+                    <li id="copyright">Copyright by Dosney Plus Company All Rights Reserved.</li>
+                </ul>
+            </article>
+            <article id="link">
+                <h3>고객센터 1588-1234</h3>
+                <select>
+                    <option>네이버</option>
+                    <option>다음</option>
+                    <option>구글</option>
+                </select>
+            </article>
+        </footer>
+</body>
+</html>
